@@ -1,0 +1,17 @@
+{
+  "name": "libros",
+  "version": "1.0.0",
+  "description": "API REST biblioteca Aurora",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node src/index.js",
+    "dev": "node --watch src/index.js"
+  },
+  "keywords": ["libros", "api", "express"],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^5.1.0",
+    "uuid": "^13.0.0"
+  }
+}
