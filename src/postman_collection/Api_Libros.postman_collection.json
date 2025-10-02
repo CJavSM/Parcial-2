@@ -1,0 +1,81 @@
+{
+	"info": {
+		"_postman_id": "3d166d5e-19ff-4515-b80d-31b756eb0a71",
+		"name": "Api_Libros",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "44259694",
+		"_collection_link": "https://javiersantizo.postman.co/workspace/Javier-Santizo's-Workspace~0e22e7b7-8ba5-4083-8635-de5f6d381a24/collection/44259694-3d166d5e-19ff-4515-b80d-31b756eb0a71?action=share&source=collection_link&creator=44259694"
+	},
+	"item": [
+		{
+			"name": "Listar todos",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "Buscar libro por ID",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "Crear Libro",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"title\": \"El Mundo de Sofía\",\r\n    \"author\": \"Jostein Gaarder\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/libros",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"libros"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Borrar libro",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"title\": \"El Mundo de Sofía\",\r\n    \"author\": \"Jostein Gaarder\"\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/libros/d49bce61-4bdf-4769-a93a-66285746222f",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"libros",
+						"d49bce61-4bdf-4769-a93a-66285746222f"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
